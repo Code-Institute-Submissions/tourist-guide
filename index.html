@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Responsive Sticky Navbar</title>
-      <link rel="stylesheet" href="assets/style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
-   </head>
-   <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tourists guide</title>
+    <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
       <div class="wrapper">
          <header>
             <nav>
@@ -21,7 +21,7 @@
                   <i class="fa fa-bars fa-2x"></i>
                </div>
                <div class="logo">
-                  LOGO
+                <img id="logo" src="assets/images/afro1.png" alt="logo">
                </div>
                <div class="menu">
                   <ul>
@@ -34,8 +34,160 @@
                   </ul>
                </div>
             </nav>
+                <div class="overlay">
+
+      <article class="welcome-text">
+        <h4><span class="brand-text"> Welcome to Africa Tourists Guide</span>!</h4>
+        <i class="fas fa-language"></i>
+        <div id="google_translate_element"></div>
+
+      </article>
+
+
+
+      <div id="controls">
+        <select id="country">
+                      <option value="all">World Wide</option>
+                      <option value="ak" selected >Select a country of destination...</option>
+                      <option value="rw">Rwanda</option>
+                      <option value="sa">South-africa</option>
+                      <option value="ma">Maroc</option>
+                      <option value="ng">Nigeria</option>
+                      <option value="ag">Algerie</option>
+                      <option value="cg">D.R.Congo</option>
+                      <option value="ug">Uganda</option>
+                      <option value="ca">Cameroon</option>
+                      <option value="et">Ethiopia</option>
+                      <option value="sd">Sudan</option>
+                      <option value="ic">Ivory Cost</option>
+                      <option value="ml">Mali</option>
+                      <option value="md">Madagascar</option>
+                      <option value="al">Angola</option>
+                      <option value="lb">Libya</option>
+                      <option value="gn">Guinea</option>
+                      <option value="bn">Benin</option>
+                      <option value="zm">Zambia</option>
+                      <option value="mz">Mozambique</option>
+                      <option value="sm">Somalia</option>
+                      <option value="mr">Mauritius</option>
+                      <option value="mn">Mauritania</option>
+                      <option value="bt">Botswana</option>
+                      <option value="cv">Cape-verde</option>
+                      <option value="sl">Seyshelles</option>
+                      <option value="mw">Malawi</option>
+                      <option value="bf">Burkina Faso</option>
+                      <option value="ea">Erithrea</option>
+                      <option value="nr">Niger</option>
+                      <option value="tg">Togo</option>
+                      <option value="gb">Gabon</option>
+                      <option value="la">Liberia</option>
+                      <option value="sl">Sierra Leone</option>
+                      <option value="sz">Swaziland</option>
+                      <option value="ss">South Soudan</option>
+                      <option value="gm">Gambia</option>
+                      <option value="cd">Chad</option>
+                      <option value="dj">Djibouti</option>
+                      <option value="bd">Burundi</option>
+                      <option value="cr">Centre Africa Republic</option>
+                      <option value="ru">Reunion</option>
+                      <option value="le">Lesotho</option>
+                      <option value="cb">Congo Brazaville</option>
+                      <option value="mr">Marocco</option>
+                      <option value="ke">Kenya</option>
+                      <option value="tu">Tunisia</option>
+                      <option value="gn">Ghana</option>
+                      <option value="nm">Namibie</option>
+                      <option value="tz">Tanzania</option>
+                      <option value="cm">Comoros</option>
+                      <option value="eg">Egypt</option>
+                      <option value="zw">Zimbabwe</option>
+                      <option value="se">Senegal</option>
+                    </select>
+      </div>
+
+
+
+      <div class="col-xs-12">
+        <!--Search bar-->
+        <form class="search-form">
+          <div id="locationField">
+            <input id="autocomplete" class="search-bar " placeholder="Add a city of destination..." type="text" />
+            <button type="button" class=" first" onclick="smoothScroll(document.getElementById('grey'))">Search</button>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
          </header>
          <div class="content">
+         <hr class="spacer " id="map-section">
+  <div id="grey">
+
+
+    <!-- Radio buttons for places -->
+
+    <div id="placestoggle">
+      <div id="places">
+        <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" />
+        <label for="lodging">Hotel</label>
+        <input onchange="search()" type="radio" id="museum" name="option" />
+        <label for="museum">Museum</label>
+        <input onchange="search()" type="radio" id="restaurant" name="option" />
+        <label for="restaurant">Restaurant</label>
+        <input onchange="search()" type="radio" id="bar" name="option" />
+        <label for="bar">Bar</label>
+        <input onchange="search()" type="radio" id="airport" name="option" />
+        <label for="airport">Airport</label>
+        <input onchange="search()" type="radio" id="bank" name="option" />
+        <label for="bank">Bank</label>
+        <input onchange="search()" type="radio" id="atractions" name="option" />
+        <label for="atractions">atractions-sites</label>
+        <input onchange="search()" type="radio" id="parks" name="option" />
+        <label for="parks">National Park</label>
+      </div>
+    </div>
+
+    <!-- the map -->
+    <div id="map"></div>
+
+    <!-- drop down options for pins on map-->
+    <div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <!-- information for each of the addresses given on the map-->
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
             <p>
                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
@@ -44,5 +196,110 @@
             </p>
          </div>
       </div>
-   </body>
+
+
+
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script>
+    // Get the email modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+
+
+
+  <script>
+    //scroll to the map
+    window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+        i++;
+        if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function() { scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+  </script>
+
+  
+
+
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script src="https://kit.fontawesome.com/dfc9dd395f.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("");
+    })();
+  </script>
+  
+
+
+
+  <!-- jQuery and Javascript for site functionalities -->
+
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Google Maps script for markers on the map -->
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+  <!--autocomplete feature of the Google Places API. -->
+  <script src="assets/js/maps.js"></script>
+
+  <!-- Sends emails on submit button using the contact form -->
+  <script src="assets/js/sendEmail.js" async></script>
+  <script src="assets/js/clear.js"></script>
+  <script src="assets/js/tests/sendMailTest.js"></script>
+  <script src="assets/spec/sendMailSpec.js"></script>
+  <script src="assets/js/no-submit.js"></script>
+
+  <!-- Load the API from the specified URL
+              *The async attribute allows the browser to render the page while the API loads
+              *The key parameter will contain the API key(needed in order for Google Maps to work)
+              *The callback parameter executes the initMap() function -->
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"
+              type="text/javascript"></script>
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT9t2XvgXuZ6fJysF25a_TorBV-514040&callback=initMap"
+  type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+    async defer></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</body>
 </html>

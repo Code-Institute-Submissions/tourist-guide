@@ -1,0 +1,622 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+#logo {
+    position: fixed;
+    float: left;
+    width: auto;
+    height: 150px;
+
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+    ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(240, 66, 66);
+    font-size: 26px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+}
+
+/*body*/
+
+.center {
+    text-align: center;
+}
+
+.welcome-text {
+    color: #ffffff;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20vh;
+    margin: 0px;
+}
+
+.search-form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button-center {
+    text-align: center;
+}
+
+.search-bar {
+    border: 3px solid #BADA55;
+    border-radius: 15px;
+    width: 70%;
+    height: 40px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+
+/* end nav bar and calling*/
+
+/*main page search*/
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.inline-block {
+    display: block;
+}
+
+#search {
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.form-control-left {
+    margin-left: 40px;
+}
+
+
+
+table {
+    font-size: 12px;
+}
+
+#map {
+    min-height: 400px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+
+}
+
+#listing {
+    position: absolute;
+    width: 200px;
+    height: 470px;
+    overflow: auto;
+    left: 60px;
+    top: 910px;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+
+#locationField {
+
+
+    border-radius: 15px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+    display: inline;
+
+
+}
+
+.resizing-search {
+    text-align: center;
+
+}
+
+#controls {
+
+    left: 300px;
+    width: 240px;
+    top: 0px;
+    z-index: 5;
+    background-color: #e5f1f0;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+
+}
+
+#autocomplete {
+    border: 3px solid #BADA55;
+    border-radius: 15px;
+    width: 30%;
+    height: 40px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+
+}
+
+#country {
+    width: 100%;
+    background-color: #e5f1f0;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+.placeIcon {
+    width: 20px;
+    height: 34px;
+    margin: 4px;
+}
+
+.hotelIcon {
+    width: 24px;
+    height: 24px;
+}
+
+#resultsTable {
+    border-collapse: collapse;
+    width: 240px;
+
+}
+
+#rating {
+    font-size: 13px;
+    font-family: Arial Unicode MS;
+}
+
+.iw_table_row {
+    height: 18px;
+}
+
+.iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+}
+
+.iw_table_icon {
+    text-align: right;
+}
+
+/* search button*/
+
+.first {
+    background: #62bb44;
+    color: #eee;
+    text-align: center;
+    border-top: 2px solid #815444;
+    border-right: 2px solid #3d1000;
+    border-bottom: 2px solid #3d1000;
+    border-left: 2px solid #815444;
+
+}
+
+.first:hover {
+    background: #a37666;
+    color: #000;
+    border-top: 2px solid #815444;
+    border-right: 2px solid #c59888;
+    border-bottom: 2px solid #c59888;
+    border-left: 2px solid #815444;
+}
+
+
+/*radio options*/
+
+#placestoggle {
+    text-align: center;
+
+}
+
+#places {
+    top: 50px;
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'roboto', serif;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 6px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #aade7c;
+    background-color: #f07030;
+    border-radius: 4px;
+
+}
+
+label {
+    font-size: 16px;
+    margin-right: 4px;
+    margin-top: 10px;
+
+}
+
+input[name="option"] {
+    height: 10px;
+    margin-top: 23px;
+}
+
+/* inquiry */
+
+.contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: grey;
+    color: black;
+    font-size: 20px;
+    margin: 0px;
+    padding: 20px;
+}
+
+.center-form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#form {
+    margin-top: 20px;
+}
+
+#form>input {
+    margin: 0 auto;
+    width: 45vw;
+    height: 30px;
+    text-align: center;
+}
+
+#form>textarea {
+    height: 80px;
+    width: 45vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn.btn-enquiry {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/*media querys */
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1060px) {
+    #listing {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    #listing {
+        left: 45px;
+    }
+}
+
+@media (max-width: 1220px) {
+    #listing {
+        left: 30px;
+    }
+}
+
+@media (max-width: 1180px) {
+    #listing {
+        left: 10px;
+    }
+}
+
+
+
+/* madal*/
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #62bb44;
+    color: white;
+    padding: 7px 20px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 40px;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+    background-color: blue;
+}
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .sendbtn {
+        width: 100%;
+    }
+}
+
+
+.row-padding {
+    display: inline-block;
+}
+
+.ouradress {
+    display: inline-block;
+}
+
+.third {
+    display: inline-block;
+    margin-right: 32px;
+    margin-left: 52px;
+    width: auto;
+    text-align: center;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-red:hover {
+    color: green;
+}
+
+.information {
+    width: auto;
+    text-align: center;
+    height: 40px;
+    background-color: orange;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+
+.info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
+
+@media only screen and (max-width: 769px) {
+    .information {
+        display: none;
+    }
+}
+
+.btn-primary {
+    background-color: green;
+}
+
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.text-orange {
+    color: orangered;
+}
+
+.opacity {
+
+    margin-right: 25px;
+    margin-top: 10px;
+    color: green;
+    text-align: center;
+}
+
+.opacity:hover {
+    color: orange;
+}
