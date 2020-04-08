@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tourists guide</title>
-    <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
-    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#">    
 </head>
 <body>
       <div class="wrapper">
@@ -26,22 +26,32 @@
                <div class="menu">
                   <ul>
                      <li><a href="#">Home</a></li>
-                     <li><a href="#">About</a></li>
+                     <li><a href="#" onclick="smoothScroll(document.getElementById('about'))">About</a></li>
                      <li><a href="#">Contact us</a></li>
                      <li><a href="#">Atraction sites</a></li>
                      <li><a href="#">Restaurants & Bars</a></li>
-                     <li><a href="#">Hotels</a></li>
+                     <li><a href="/gallery.html">Garelly</a></li>
                   </ul>
                </div>
             </nav>
                 <div class="overlay">
 
       <article class="welcome-text">
-        <h4><span class="brand-text"> Welcome to Africa Tourists Guide</span>!</h4>
+        <h4><span class="brand-text"></span></h4>
         <i class="fas fa-language"></i>
         <div id="google_translate_element"></div>
 
       </article>
+      <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1 brand-text text-center">Africa Tourists</h1>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2 brand-text text-center">Guide</h3>
+                
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -188,98 +198,226 @@
     </div>
   </div>
 
-            <p>
-               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <p>
-               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-         </div>
+  <!--Welcome Section
+  <div class="welcome-section-background">
+    <video playsinline autoplay muted loop poster="bg.jpg" id="bgvid">
+   <source src="assets/video/mountain.mp4" type="video/mp4">
+</video>
+</div>-->
+            <hr class="spacer">
+</div>
       </div>
+<!--vard images-->
+<div class="main">
+  <h1>Most atractive sites</h1>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="assets/images/animal16.png"></div>
+        <div class="card_content">
+          <h2 class="card_title">ZEBRA</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">VISIT</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="assets/images/anc.jpg"></div>
+        <div class="card_content">
+          <h2 class="card_title">PYLAMIDE</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Visit</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="assets/images/gorilla.png"></div>
+        <div class="card_content">
+          <h2 class="card_title">GORILLA</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Visit</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="assets/images/animal2.png"></div>
+        <div class="card_content">
+          <h2 class="card_title">TIGER</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Visit</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="assets/images/hypopotame.png"></div>
+        <div class="card_content">
+          <h2 class="card_title">HYPOPOTAMUS</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Visit</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="assets/images/animal10.png"></div>
+        <div class="card_content">
+          <h2 class="card_title">UMUSAMBI</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Visit</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<!--end card images-->
+<h1 class="text-center text-uppercase font-weight-bold">GALLERY</h1>
+
+<!--gallery-->
+<section class="mb-5">
+<div class="slider">
+  <figure class="slider__item"><img class="slider__image" src="assets/images/animal10.png"/>
+    <figcaption class="slider__caption">Image - 533</figcaption>
+  </figure>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/animal9.png"/>
+    <figcaption class="slider__caption">Image - 623</figcaption>
+  </figure>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/animal11.png"/>
+    <figcaption class="slider__caption">Image - 419</figcaption>
+  </figure>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/animal12.png"/>
+    <figcaption class="slider__caption">Image - 490</figcaption>
+  </figure>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/animal13.png"/>
+    <figcaption class="slider__caption">Image - 695</figcaption>
+  </figure>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/animal14.png"/>
+    <figcaption class="slider__caption">Image - 458</figcaption>
+  </figure>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/animal15.png"/>
+    <figcaption class="slider__caption">Image - 702</figcaption>
+  </figure>
+</div>
+<div class="slider__btn"></div>
+</section>
+<div class="especer">
+</div>
+
+  <!-- about us-->
+<!-- Background video -->
+<div class="video-background-holder mt-5" id="about">
+  <div class="video-background-overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="assets/video/mountain.mp4" type="video/mp4">
+    </video>
+  <div class="video-background-content container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white" id="about">
+        <h1 class="display-4">ABOUT US</h1>
+        <h4 class="white">
+        Africa Tourists Guide brings you a carefully selected range of overland adventures, wildlife safaris and travel
+        packages. With over 15 years’ experience in organising African tours and safaris, we bring you the very best of
+        Africa. Whether it is a day tour,
+        camping overland tour, an exclusive lodge or a Big 5 safari, Open Tourists Guide can help you plan a fantastic
+        travel experience to suit your desires and budget. With a passion for travel and vast knowledge of Africa,
+        Africa Tourists Guide will
+        help you organize an unforgettable African experience. </h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End -->
 
 
-
-
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-  <script>
-    // Get the email modal
-    var modal = document.getElementById('id01');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
-
-
-
-
-
-  <script>
-    //scroll to the map
-    window.smoothScroll = function(target) {
-      var scrollContainer = target;
-      do { //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-      } while (scrollContainer.scrollTop == 0);
-
-      var targetY = 0;
-      do { //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-      } while (target = target.offsetParent);
-
-      scroll = function(c, a, b, i) {
-        i++;
-        if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function() { scroll(c, a, b, i); }, 20);
-      }
-      // start scrolling
-      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    }
-  </script>
-
-  
-
-
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    }
-  </script>
+ 
+<!--footer-->
+<footer class="new_footer_area bg_color mt-5">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">CONTACT US</h3>
+                                <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                <form action="POST" onsubmit="return sendMail(this);" method="post" novalidate="true" _lpchecked="1">
+                                    <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required placeholder="Email">
+                                    <textarea type="text" name="projectsummary" class="form-control" id="informationsummary" class="form-control " placeholder="Message"></textarea>
+                                    <button type="submit" class="sendbtn center-block">Send Email</button>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Address</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><i class="fa fa-map-marker fa-x text-orange"><span class="contact-text place">Seattle | WA</span></i></li>
+                                    <li><i class="fa fa-phone fa-x text-orange"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+                                    <li><i class="fa fa-envelope fa-x text-orange"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li>
+                                    <li><a href="#">Desktop</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">My tasks</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                <ul class="list-unstyled f_list">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Term &amp; conditions</a></li>
+                                    <li><a href="#">Reporting</a></li>
+                                    <li><a href="#">Documentation</a></li>
+                                    <li><a href="#">Support Policy</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mt-3">
+                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                <h3 class="f-title f_600 t_color f_size_18">Social Media</h3>
+                                <div class="f_social_icon">
+                                    <a href="#" class="fab fa-facebook text-green"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-linkedin"></a>
+                                    <a href="#" class="fab fa-pinterest"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!--end footer-->
 
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script src="https://kit.fontawesome.com/dfc9dd395f.js"></script>
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <script type="text/javascript">
-    (function() {
-      emailjs.init("");
-    })();
-  </script>
-  
-
-
-
   <!-- jQuery and Javascript for site functionalities -->
-
-  
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!-- Google Maps script for markers on the map -->
   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
   <!--autocomplete feature of the Google Places API. -->
-  <script src="assets/js/maps.js"></script>
+  
 
   <!-- Sends emails on submit button using the contact form -->
   <script src="assets/js/sendEmail.js" async></script>
@@ -288,18 +426,16 @@
   <script src="assets/spec/sendMailSpec.js"></script>
   <script src="assets/js/no-submit.js"></script>
 
-  <!-- Load the API from the specified URL
-              *The async attribute allows the browser to render the page while the API loads
-              *The key parameter will contain the API key(needed in order for Google Maps to work)
-              *The callback parameter executes the initMap() function -->
-              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"
               type="text/javascript"></script>
-              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT9t2XvgXuZ6fJysF25a_TorBV-514040&callback=initMap"
+              <script type="text/javascript" src="assets/js/maps.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"
   type="text/javascript"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
-    async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&libraries=places&callback=initMap"
+        async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/place/autocomplete/json?input=1600+Amphitheatre&key=AIzaSyBT9t2XvgXuZ6fJysF25a_TorBV-514040&sessiontoken=1234567890"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>

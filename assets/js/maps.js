@@ -17,8 +17,8 @@ var countries = {
   },
   'sa': {
     center: {
-      lat: -28.4792625,
-      lng: 24.6727135
+      lat: -30.559482,
+      lng: 22.937506
     },
     zoom: 3
   },
