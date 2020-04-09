@@ -145,6 +145,8 @@ HTML code has been tested with mark-up validation service
 
 - Email test sent.
 
+* when you try to send email before fill up the form you will get pop up message(fill the fild below)
+
 - atraction sites links.
 
 ![main image](assets/images/atraction.png)
