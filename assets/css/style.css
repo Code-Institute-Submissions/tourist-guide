@@ -62,6 +62,26 @@ header {
     }
 }
 
+@media screen and (max-width: 410px) {
+    #gallery {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .gallerytitle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .about-backg {
+        display: none;
+    }
+
+}
+
+
 @media screen and (max-width: 736px) {
     .logo {
         display: none;

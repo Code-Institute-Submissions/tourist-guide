@@ -26,8 +26,6 @@ the owner can profit from tourists who want to book for transport cars
 
 - If i don't find exactly the information i can send an email and get more imformation from tourists guide staffs.
 
-![main image](assets/images/contactus.png)
-
 - I can choose high rating hotel through the dashboad
 - Using the Restaurants selector I can choose high rating restaurant through the dashboad.
 - As a user if i want to advertise on the website i can contact them.
@@ -50,6 +48,10 @@ the owner can profit from tourists who want to book for transport cars
 
 - The atraction sites links show to users atractions sites around africa.
 - The email makes direct contact to manager about reports, advertising , business partnerships or general questions.
+
+![main image](assets/images/contactus.png)
+
+- About us
 
 ![main image](assets/images/aboutusa.png)
 
@@ -93,8 +95,6 @@ the owner can profit from tourists who want to book for transport cars
 
 - The code was tested on Google Chrome Developer Tools
 
-![main image](assets/images/mainpage.png)
-
 HTML code has been tested with mark-up validation service
 
 ![main image](assets/images/htmltest.png)
@@ -123,13 +123,19 @@ HTML code has been tested with mark-up validation service
 
 ## Browser testing for all features:
 
-- Testing screen sizing.
+- Testing screen sizing iPAD pro.
 
 ![main image](assets/images/ipad.png)
 
+- Testing screen sizing iPAD.
+
 ![main image](assets/images/ipap.png)
 
+- Testing screen sizing iphone.
+
 ![main image](assets/images/iphone.png)
+
+- Testing screen sizing samsung.
 
 ![main image](assets/images/smalls.png)
 
@@ -192,7 +198,7 @@ HTML code has been tested with mark-up validation service
 
 ## Credits
 
-- JavaScript Code snippets used for Maps, markers and clearing the markers from Go
+- JavaScript Code snippets used for Maps, markers and clearing the markers from Google
 - Gallery from bootstrap
 
 - The progress of sending email and some other technical skills used in modal was taken from
