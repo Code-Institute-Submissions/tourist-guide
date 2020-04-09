@@ -10,12 +10,14 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Orbitron:wght@900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="#">    
 </head>
 <body>
       <div class="wrapper">
-         <header>
+         <header style="background-image: url('assets/images/nature.png');">
             <nav>
                <div class="menu-icon">
                   <i class="fa fa-bars fa-2x"></i>
@@ -25,12 +27,12 @@
                </div>
                <div class="menu">
                   <ul>
-                     <li><a href="#">Home</a></li>
+                     <li><a href="/index.html">Home</a></li>
                      <li><a href="#" onclick="smoothScroll(document.getElementById('about'))">About</a></li>
-                     <li><a href="#">Contact us</a></li>
-                     <li><a href="#">Atraction sites</a></li>
-                     <li><a href="#">Restaurants & Bars</a></li>
-                     <li><a href="/gallery.html">Garelly</a></li>
+                     <li><a href="#" onclick="smoothScroll(document.getElementById('contact-us'))">Contact us</a></li>
+                     <li><a href="#" onclick="smoothScroll(document.getElementById('atraction'))">Atraction sites</a></li>
+                     <li><a href="#" onclick="smoothScroll(document.getElementById('bars'))">Restaurants & Bars</a></li>
+                     <li><a href="#" onclick="smoothScroll(document.getElementById('gallery'))" >Gallery</a></li>
                   </ul>
                </div>
             </nav>
@@ -43,7 +45,7 @@
 
       </article>
       <div class="container">
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center" id="bars">
             <div class="mbr-white col-md-10">
                 <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1 brand-text text-center">Africa Tourists</h1>
                 <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2 brand-text text-center">Guide</h3>
@@ -198,18 +200,12 @@
     </div>
   </div>
 
-  <!--Welcome Section
-  <div class="welcome-section-background">
-    <video playsinline autoplay muted loop poster="bg.jpg" id="bgvid">
-   <source src="assets/video/mountain.mp4" type="video/mp4">
-</video>
-</div>-->
             <hr class="spacer">
 </div>
       </div>
 <!--vard images-->
-<div class="main">
-  <h1>Most atractive sites</h1>
+<div class="main" id="atraction">
+  <h1 class="font-weight-bold heads">Atractive sites</h1>
   <ul class="cards">
     <li class="cards_item">
       <div class="card">
@@ -274,32 +270,48 @@
   </ul>
 </div>
 <!--end card images-->
-<h1 class="text-center text-uppercase font-weight-bold">GALLERY</h1>
+<h1 class="text-center text-uppercase font-weight-bold heads">GALLERY</h1>
 
 <!--gallery-->
-<section class="mb-5">
+<section class="mb-5" id="gallery">
 <div class="slider">
   <figure class="slider__item"><img class="slider__image" src="assets/images/animal10.png"/>
-    <figcaption class="slider__caption">Image - 533</figcaption>
+    <figcaption class="slider__caption">Grey crowned crane, also known as the African crowned crane, golden crested crane, golden-crowned crane, East African crane, East African crowned crane, Eastern crowned crane, South African crane, is a bird in the crane family, Gruidae. 
+     </figcaption>
   </figure>
   <figure class="slider__item"><img class="slider__image" src="assets/images/animal9.png"/>
-    <figcaption class="slider__caption">Image - 623</figcaption>
+    <figcaption class="slider__caption">Giraffe is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be one species, Giraffa camelopardalis, with nine subspecies. 
+    </figcaption>
   </figure>
   <figure class="slider__item"><img class="slider__image" src="assets/images/animal11.png"/>
-    <figcaption class="slider__caption">Image - 419</figcaption>
+    <figcaption class="slider__caption">Orangutans are unique in the ape world. Of the four kinds of nonhuman great apes – gorillas, chimpanzees, bonobos and orangutans – only the orangutan comes from Asia; the rest come from Africa.
+    </figcaption>
   </figure>
   <figure class="slider__item"><img class="slider__image" src="assets/images/animal12.png"/>
-    <figcaption class="slider__caption">Image - 490</figcaption>
+    <figcaption class="slider__caption">Crocodiles or true crocodiles are large semiaquatic reptiles that live throughout the tropics in Africa, Asia, the Americas and Australia. Crocodylinae, all of whose members are considered true crocodiles, is classified as a biological subfamily. 
+      </figcaption>
   </figure>
   <figure class="slider__item"><img class="slider__image" src="assets/images/animal13.png"/>
-    <figcaption class="slider__caption">Image - 695</figcaption>
+    <figcaption class="slider__caption">Gorillas are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Sub-Saharan Africa. The genus Gorilla is divided into two species: the eastern gorillas and the western gorillas, and either four or five subspecies. They are the largest living primates. 
+     </figcaption>
   </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/animal14.png"/>
-    <figcaption class="slider__caption">Image - 458</figcaption>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/elephant.png"/>
+    <figcaption class="slider__caption">Elephants are mammals of the family Elephantidae and the largest existing land animals. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. Elephantidae is the only surviving family of the order Proboscidea; extinct members include the mastodons. 
+        </figcaption>
   </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/animal15.png"/>
-    <figcaption class="slider__caption">Image - 702</figcaption>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/rainbow.png"/>
+    <figcaption class="slider__caption">Victoria Falls is a waterfall on the Zambezi River in southern Africa, which provides habitat for several unique species of plants and animals. It is located on the border between Zambia and Zimbabwe and is considered to be the world's largest waterfall due to its width of 1,708 metres. 
+        </figcaption>
   </figure>
+  <figure class="slider__item"><img class="slider__image" src="assets/images/pyra.png"/>
+    <figcaption class="slider__caption">Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids. Most were built as tombs for the country's pharaohs and their consorts during the Old and Middle Kingdom periods.
+        </figcaption>
+  </figure>
+  
+  
+  
+ 
+  
 </div>
 <div class="slider__btn"></div>
 </section>
@@ -308,43 +320,48 @@
 
   <!-- about us-->
 <!-- Background video -->
-<div class="video-background-holder mt-5" id="about">
+  <h1 class=" mt-5 font-weight-bold heads">ABOUT US</h1>
+<div class="video-background-holder  fixed" id="about">
   <div class="video-background-overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="assets/video/mountain.mp4" type="video/mp4">
     </video>
   <div class="video-background-content container h-100">
     <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100 text-white" id="about">
-        <h1 class="display-4">ABOUT US</h1>
-        <h4 class="white">
+      <div class="w-100" id="about">
+      <div class="jumbotron-fluid about-backg">
+  <div class="container about-backg">
+    <h4 class=" aboutus">
         Africa Tourists Guide brings you a carefully selected range of overland adventures, wildlife safaris and travel
         packages. With over 15 years’ experience in organising African tours and safaris, we bring you the very best of
         Africa. Whether it is a day tour,
         camping overland tour, an exclusive lodge or a Big 5 safari, Open Tourists Guide can help you plan a fantastic
         travel experience to suit your desires and budget. With a passion for travel and vast knowledge of Africa,
         Africa Tourists Guide will
-        help you organize an unforgettable African experience. </h4>
+        help you to organize an unforgettable African experience. </h4>
+  </div>
+</div>
+        
       </div>
     </div>
   </div>
 </div>
 <!-- End -->
 
-
+ <h1 class=" font-weight-bold heads">CONTACT US</h1>
  
 <!--footer-->
-<footer class="new_footer_area bg_color mt-5">
+<footer class="new_footer_area footer_color mt-5" id="contact-us">
             <div class="new_footer_top">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                                 <h3 class="f-title f_600 t_color f_size_18">CONTACT US</h3>
-                                <p>Don’t miss any updates of our new templates and extensions.!</p>
-                                <form action="POST" onsubmit="return sendMail(this);" method="post" novalidate="true" _lpchecked="1">
-                                    <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required placeholder="Email">
-                                    <textarea type="text" name="projectsummary" class="form-control" id="informationsummary" class="form-control " placeholder="Message"></textarea>
+                                <p>Feel free to contac us for more information!</p>
+                                <form action="POST" onsubmit="return sendMail(this);" method="post" novalidate="true" _lpchecked="1" id="id01">
+                                    <input type="email" name="emailaddress" class="form-control mb-2" id="emailaddress" placeholder="Email" required placeholder="Email">
+                                    <textarea type="text" name="projectsummary" class="form-control mb-2" id="informationsummary" class="form-control " placeholder="Message"></textarea>
                                     <button type="submit" class="sendbtn center-block">Send Email</button>
                                     
                                 </form>
@@ -355,11 +372,8 @@
                                 <h3 class="f-title f_600 t_color f_size_18">Address</h3>
                                 <ul class="list-unstyled f_list">
                                     <li><i class="fa fa-map-marker fa-x text-orange"><span class="contact-text place">Seattle | WA</span></i></li>
-                                    <li><i class="fa fa-phone fa-x text-orange"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-                                    <li><i class="fa fa-envelope fa-x text-orange"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li>
-                                    <li><a href="#">Desktop</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">My tasks</a></li>
+                                    <li><i class="fa fa-phone fa-x text-orange"><span class="contact-text phone"><a href="tel:46-704052680" title="Give me a call">+46704052680</a></span></i></li>
+                                    <li><i class="fa fa-envelope fa-x text-orange"><span class="contact-text gmail"><a href="mailto:frankmasabo55@gmail.com" title="Send me an email">frankmasabo55@gmail.com</a></span></i></li>
                                 </ul>
                             </div>
                         </div>
@@ -369,10 +383,6 @@
                                 <ul class="list-unstyled f_list">
                                     <li><a href="#">FAQ</a></li>
                                     <li><a href="#">Term &amp; conditions</a></li>
-                                    <li><a href="#">Reporting</a></li>
-                                    <li><a href="#">Documentation</a></li>
-                                    <li><a href="#">Support Policy</a></li>
-                                    <li><a href="#">Privacy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -397,45 +407,56 @@
             <div class="footer_bottom">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-sm-7">
-                            <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </footer>
+                        <div class="col-lg-6 col-sm-7 text-center copyright">
+                            Copyright &copy; <script type="text/javascript">
+document.write("2020 - "+ new Date().getFullYear());
+</script> <a href="https://frank-masabo.herokuapp.com/"><span class="owner">MASAcode All right reserved</span></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
 <!--end footer-->
 
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="https://kit.fontawesome.com/dfc9dd395f.js"></script>
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-  <!-- jQuery and Javascript for site functionalities -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <!-- Google Maps script for markers on the map -->
-  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<!-- jQuery and Javascript for site functionalities -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Google Maps script for markers on the map -->
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
-  <!--autocomplete feature of the Google Places API. -->
-  
+<!--autocomplete feature of the Google Places API. -->
+<!-- Sends emails on submit button using the contact form -->
 
-  <!-- Sends emails on submit button using the contact form -->
-  <script src="assets/js/sendEmail.js" async></script>
-  <script src="assets/js/clear.js"></script>
-  <script src="assets/js/tests/sendMailTest.js"></script>
-  <script src="assets/spec/sendMailSpec.js"></script>
-  <script src="assets/js/no-submit.js"></script>
-
+<script src="assets/js/sendEmail.js" async></script>
+<script src="assets/js/clear.js"></script>
+<script src="assets/js/tests/sendMailTest.js"></script>
+<script src="assets/spec/sendMailSpec.js"></script>
+<script src="assets/js/no-submit.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"
-              type="text/javascript"></script>
-              <script type="text/javascript" src="assets/js/maps.js"></script>
+type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/maps.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"
-  type="text/javascript"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&libraries=places&callback=initMap"
-        async defer></script>
-  <script src="https://maps.googleapis.com/maps/api/place/autocomplete/json?input=1600+Amphitheatre&key=AIzaSyBT9t2XvgXuZ6fJysF25a_TorBV-514040&sessiontoken=1234567890"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/script.js"></script>
+type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&libraries=places&callback=initMap"
+async defer></script>
+<script src="https://maps.googleapis.com/maps/api/place/autocomplete/json?input=1600+Amphitheatre&key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&sessiontoken=1234567890"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<!--Start of Tawk.to for direct messaging Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e878f1a69e9320caac00b25/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </body>
 </html>

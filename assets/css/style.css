@@ -3,17 +3,19 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: 'Josefin Slab', serif;
 }
 
 body {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: 'Josefin Slab', serif;
     font-weight: lighter;
 }
 
 header {
     width: 100%;
     height: 100vh;
-    background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+    background-image: url('nature.png');
+    /*  background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;*/
     background-size: cover;
 }
 
@@ -100,6 +102,8 @@ nav ul li a {
     text-decoration: none;
     color: rgb(150, 244, 20);
     font-size: 26px;
+    font-family: 'Josefin Slab', serif;
+    z-index: 100;
 }
 
 .menu-icon {
@@ -187,7 +191,7 @@ nav ul li a {
 
 /* end nav bar and calling*/
 
-/*main page search*/
+/*main page search gor sites*/
 
 .uppercase {
     text-transform: uppercase;
@@ -212,6 +216,7 @@ table {
     font-size: 12px;
 }
 
+/*map*/
 #map {
     min-height: 400px;
     max-width: 700px;
@@ -220,6 +225,7 @@ table {
 
 }
 
+/*listing results*/
 #listing {
     position: absolute;
     width: 200px;
@@ -263,6 +269,7 @@ table {
 
 }
 
+/*autocomplate saerch*/
 #autocomplete {
     border: 3px solid #BADA55;
     border-radius: 15px;
@@ -281,6 +288,7 @@ table {
     border: 2px solid black;
 }
 
+/*place search icon*/
 .placeIcon {
     width: 20px;
     height: 34px;
@@ -466,30 +474,6 @@ input[name="option"] {
     }
 }
 
-
-
-/* madal*/
-
-/* Full-width input fields */
-
-input[type=text],
-input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-
-input[type=text]:focus,
-input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
 /* Set a style for all buttons */
 
 button {
@@ -505,7 +489,7 @@ button {
 
 button:hover {
     opacity: 1;
-    background-color: blue;
+    background-color: rgb(255, 0, 140);
 }
 
 /* Style the horizontal ruler */
@@ -515,22 +499,6 @@ hr {
     margin-bottom: 25px;
 }
 
-/* The Close Button (x) */
-
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-    color: #f44336;
-    cursor: pointer;
-}
 
 /* Clear floats */
 
@@ -594,7 +562,6 @@ hr {
     margin-top: 10px;
 }
 
-/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */
 
 @media only screen and (max-width: 769px) {
     .information {
@@ -659,6 +626,15 @@ div.desc {
 }
 
 /*contac us*/
+.fixed {
+    position: fixed;
+}
+
+.white-color {
+    z-index: 15;
+    position: absolute;
+}
+
 #contact {
     width: 100%;
     height: 100vh;
@@ -833,9 +809,13 @@ textarea {
 
 .copyright {
     font: 200 14px 'Oswald', sans-serif;
-    color: #555;
+    color: rgb(245, 139, 25);
     letter-spacing: 1px;
     text-align: center;
+}
+
+.owner {
+    color: hotpink;
 }
 
 hr {
@@ -937,7 +917,7 @@ hr {
 /*card images*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
-/* Design */
+/* atractions sites */
 *,
 *::before,
 *::after {
@@ -959,10 +939,14 @@ card-description {
     margin: 0 auto;
 }
 
-h1 {
+.heads {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-family: 'Orbitron', sans-serif;
+    color: #f07030;
+    text-decoration: underline;
 }
 
 img {
@@ -1045,15 +1029,15 @@ img {
     font-weight: 400;
 }
 
-/*gallery*/
+/*gallery and image caption*/
 img {
     max-width: 100%;
     height: auto;
 }
 
 .slider {
-    width: 90vmin;
-    height: 90vmin;
+    width: 100vmin;
+    height: 100vmin;
     -webkit-perspective: 100vmin;
     perspective: 100vmin;
     margin: auto;
@@ -1069,7 +1053,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    padding-top: 15vmin;
+    padding-top: 20vmin;
     box-sizing: border-box;
     -webkit-transition: -webkit-transform 0.18s ease;
     transition: -webkit-transform 0.18s ease;
@@ -1143,11 +1127,11 @@ img {
 
 .slider__image {
     width: 100%;
-    height: 80%;
+    height: 75%;
     background-color: #999;
     border: 1.5vmin solid #eee;
     box-sizing: border-box;
-    box-shadow: 0px 3vmin 3vmin rgba(0, 0, 0, 0.75), 0 -1.5vmin 2.7vmin rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0vmin 0vmin rgba(0, 0, 0, 0.75), 0 -1.5vmin 2.7vmin rgba(0, 0, 0, 0.75);
     overflow: hidden;
     display: block;
     -webkit-transition: opacity 0.2s ease, -webkit-transform 0.18s ease;
@@ -1158,10 +1142,12 @@ img {
     transform-origin: bottom center;
 }
 
+
+
 .slider__caption {
     height: 20%;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(250, 81, 81);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1185,8 +1171,8 @@ img {
     border-bottom: 2vmin solid rgb(225, 112, 26);
     z-index: 1;
     cursor: pointer;
-    -webkit-transform: perspective(10vmin) rotateX(-30deg) rotateZ(45deg);
-    transform: perspective(10vmin) rotateX(-10deg) rotateZ(45deg);
+    -webkit-transform: perspective(15vmin) rotateX(-30deg) rotateZ(45deg);
+    transform: perspective(15vmin) rotateX(-10deg) rotateZ(45deg);
 }
 
 .slider__btn:active {
@@ -1195,10 +1181,10 @@ img {
 }
 
 .especer {
-    height: 10px;
+    height: 5px;
 }
 
-/*video background*/
+/*video background and about jumbtron*/
 .video-background-holder {
     position: relative;
     background-color: black;
@@ -1216,7 +1202,7 @@ img {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: 0;
+
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -1225,7 +1211,7 @@ img {
 
 .video-background-content {
     position: relative;
-    z-index: 2;
+
 }
 
 .video-background-overlay {
@@ -1236,15 +1222,25 @@ img {
     width: 100%;
     background-color: black;
     opacity: 0.5;
-    z-index: 1;
+
 }
 
-.hideheaderongallery {
+.about-backg {
+    background-color: #a0330b;
+    border-radius: 5px;
+}
+
+.aboutus {
+    font-weight: 200;
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    color: rgb(70, 218, 129);
     position: relative;
 }
 
 /*end gallery*/
-/*footer*/
+
+/*footer and contact form*/
 
 .new_footer_area {
     background: #fbfbfd;
@@ -1254,6 +1250,10 @@ img {
     padding: 120px 0px 270px;
     position: relative;
     overflow-x: hidden;
+}
+
+.footer_color {
+    background: linear-gradient(to bottom left, rgb(26, 5, 8) 40%, rgb(88, 213, 93) 100%);
 }
 
 .new_footer_area .footer_bottom {
@@ -1267,6 +1267,7 @@ img {
     line-height: 20px;
     color: #7f88a6;
     padding: 27px 0px;
+    bottom: 0;
 }
 
 .new_footer_top .company_widget p {
@@ -1342,7 +1343,7 @@ button:focus {
     border-radius: 50%;
     font-size: 14px;
     line-height: 45px;
-    color: #88e62a;
+    color: #e62aa1;
     display: inline-block;
     background: #6e98f9;
     text-align: center;
@@ -1380,6 +1381,7 @@ button:focus {
     color: #5e2ced;
 }
 
+/*footer copyright*/
 .new_footer_top .f_social_icon a:hover {
     background: #5e2ced;
     border-color: #5e2ced;
@@ -1403,14 +1405,6 @@ button:focus {
     font-size: 18px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #4b505e;
-}
 
 .new_footer_top .f_widget.about-widget .f_list li a {
     color: #6a7695;
