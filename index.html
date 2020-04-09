@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!--head-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,453 +12,499 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Orbitron:wght@900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="#">    
+    <link rel="shortcut icon" href="#">
 </head>
+<!--end head-->
+<!--body-->
+
 <body>
-      <div class="wrapper">
-         <header style="background-image: url('assets/images/nature.png');">
+    <div class="wrapper">
+        <!--header background image-->
+        <header style="background-image: url('assets/images/nature.png');">
+            <!--navigation bar-->
             <nav>
-               <div class="menu-icon">
-                  <i class="fa fa-bars fa-2x"></i>
-               </div>
-               <div class="logo">
-                <img id="logo" src="assets/images/afro1.png" alt="logo">
-               </div>
-               <div class="menu">
-                  <ul>
-                     <li><a href="/index.html">Home</a></li>
-                     <li><a href="#" onclick="smoothScroll(document.getElementById('about'))">About</a></li>
-                     <li><a href="#" onclick="smoothScroll(document.getElementById('contact-us'))">Contact us</a></li>
-                     <li><a href="#" onclick="smoothScroll(document.getElementById('atraction'))">Atraction sites</a></li>
-                     <li><a href="#" onclick="smoothScroll(document.getElementById('bars'))">Restaurants & Bars</a></li>
-                     <li><a href="#" onclick="smoothScroll(document.getElementById('gallery'))" >Gallery</a></li>
-                  </ul>
-               </div>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    <img id="logo" src="assets/images/afro1.png" alt="logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="smoothScroll(document.getElementById('about'))">About</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="smoothScroll(document.getElementById('contact-us'))">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="smoothScroll(document.getElementById('atraction'))">Atraction sites</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="smoothScroll(document.getElementById('bars'))">Restaurants & Bars</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="smoothScroll(document.getElementById('gallery'))">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-                <div class="overlay">
-
-      <article class="welcome-text">
-        <h4><span class="brand-text"></span></h4>
-        <i class="fas fa-language"></i>
-        <div id="google_translate_element"></div>
-
-      </article>
-      <div class="container">
-        <div class="row justify-content-md-center" id="bars">
-            <div class="mbr-white col-md-10">
-                <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1 brand-text text-center">Africa Tourists</h1>
-                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2 brand-text text-center">Guide</h3>
-                
+            <!--end navigation bar-->
+            <div class="overlay">
+                <!--welcome section-->
+                <div class="welcome-text">
+                    <i class="fas fa-language"></i>
+                    <div id="google_translate_element"></div>
+                    <!--welcome words-->
+                </div>
+                <div class="container">
+                    <div class="row justify-content-md-center" id="bars">
+                        <div class="mbr-white col-md-10">
+                            <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1 brand-text text-center">Africa Tourists</h1>
+                            <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2 brand-text text-center">Guide</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--searching bar-->
+                <div id="controls">
+                    <span class="badge badge-pill badge-warning">1</span>
+                    <select id="country">
+                        <option value="all">World Wide</option>
+                        <option value="ak" selected>Select a country of destination...</option>
+                        <option value="rw">Rwanda</option>
+                        <option value="ma">Maroc</option>
+                        <option value="ng">Nigeria</option>
+                        <option value="ag">Algerie</option>
+                        <option value="cg">D.R.Congo</option>
+                        <option value="ug">Uganda</option>
+                        <option value="ca">Cameroon</option>
+                        <option value="et">Ethiopia</option>
+                        <option value="sd">Sudan</option>
+                        <option value="ic">Ivory Cost</option>
+                        <option value="ml">Mali</option>
+                        <option value="md">Madagascar</option>
+                        <option value="al">Angola</option>
+                        <option value="lb">Libya</option>
+                        <option value="gn">Guinea</option>
+                        <option value="bn">Benin</option>
+                        <option value="zm">Zambia</option>
+                        <option value="mz">Mozambique</option>
+                        <option value="sm">Somalia</option>
+                        <option value="mr">Mauritius</option>
+                        <option value="mn">Mauritania</option>
+                        <option value="bt">Botswana</option>
+                        <option value="cv">Cape-verde</option>
+                        <option value="sl">Seyshelles</option>
+                        <option value="mw">Malawi</option>
+                        <option value="bf">Burkina Faso</option>
+                        <option value="ea">Erithrea</option>
+                        <option value="nr">Niger</option>
+                        <option value="tg">Togo</option>
+                        <option value="gb">Gabon</option>
+                        <option value="la">Liberia</option>
+                        <option value="sl">Sierra Leone</option>
+                        <option value="sz">Swaziland</option>
+                        <option value="ss">South Soudan</option>
+                        <option value="gm">Gambia</option>
+                        <option value="cd">Chad</option>
+                        <option value="dj">Djibouti</option>
+                        <option value="bd">Burundi</option>
+                        <option value="cr">Centre Africa Republic</option>
+                        <option value="ru">Reunion</option>
+                        <option value="le">Lesotho</option>
+                        <option value="cb">Congo Brazaville</option>
+                        <option value="mr">Marocco</option>
+                        <option value="ke">Kenya</option>
+                        <option value="tu">Tunisia</option>
+                        <option value="gn">Ghana</option>
+                        <option value="nm">Namibie</option>
+                        <option value="tz">Tanzania</option>
+                        <option value="cm">Comoros</option>
+                        <option value="eg">Egypt</option>
+                        <option value="sa">South-africa</option>
+                        <option value="zw">Zimbabwe</option>
+                        <option value="se">Senegal</option>
+                    </select>
+                </div>
+                <div class="col-xs-12">
+                    <!--Search bar-->
+                    <form class="search-form">
+                        <span class="badge badge-pill badge-warning">2</span>
+                        <div id="locationField">
+                            <input id="autocomplete" class="search-bar " placeholder="Add a city of destination..." type="text" />
+                            <button type="button" class=" first" onclick="smoothScroll(document.getElementById('grey'))">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <hr class="spacer " id="map-section">
+            <div id="grey">
+                <!-- Radio buttons for places results-->
+                <div id="placestoggle">
+                    <div id="places">
+                        <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" />
+                        <label for="lodging">Hotel</label>
+                        <input onchange="search()" type="radio" id="museum" name="option" />
+                        <label for="museum">Museum</label>
+                        <input onchange="search()" type="radio" id="restaurant" name="option" />
+                        <label for="restaurant">Restaurant</label>
+                        <input onchange="search()" type="radio" id="bar" name="option" />
+                        <label for="bar">Bar</label>
+                        <input onchange="search()" type="radio" id="airport" name="option" />
+                        <label for="airport">Airport</label>
+                        <input onchange="search()" type="radio" id="bank" name="option" />
+                        <label for="bank">Bank</label>
+                        <input onchange="search()" type="radio" id="atractions" name="option" />
+                        <label for="atractions">atractions-sites</label>
+                        <input onchange="search()" type="radio" id="parks" name="option" />
+                        <label for="parks">National Park</label>
+                    </div>
+                </div>
+                <!-- the map -->
+                <div id="map"></div>
+                <!-- drop down options for pins on map-->
+                <div id="listing">
+                    <table id="resultsTable">
+                        <tbody id="results"></tbody>
+                    </table>
+                </div>
+                <!-- information for each of the addresses given on the map-->
+                <div style="display: none">
+                    <div id="info-content">
+                        <table>
+                            <tr id="iw-url-row" class="iw_table_row">
+                                <td id="iw-icon" class="iw_table_icon"></td>
+                                <td id="iw-url"></td>
+                            </tr>
+                            <tr id="iw-address-row" class="iw_table_row">
+                                <td class="iw_attribute_name">Address:</td>
+                                <td id="iw-address"></td>
+                            </tr>
+                            <tr id="iw-phone-row" class="iw_table_row">
+                                <td class="iw_attribute_name">Telephone:</td>
+                                <td id="iw-phone"></td>
+                            </tr>
+                            <tr id="iw-rating-row" class="iw_table_row">
+                                <td class="iw_attribute_name">Rating:</td>
+                                <td id="iw-rating"></td>
+                            </tr>
+                            <tr id="iw-website-row" class="iw_table_row">
+                                <td class="iw_attribute_name">Website:</td>
+                                <td id="iw-website"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr class="spacer">
+        </div>
+    </div>
+    <!--atractive sites-->
+    <div class="main" id="atraction">
+        <h1 class="font-weight-bold heads">Atractive sites</h1>
+        <ul class="cards">
+            <!--card 1-->
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="assets/images/animal16.png" alt="animal">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">ZEBRA</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">VISIT</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <!--card2-->
+                <div class="card">
+                    <div class="card_image">
+                        <img src="assets/images/anc.jpg" alt="animal">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">PYLAMIDE</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">Visit</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <!--card3-->
+                    <div class="card_image">
+                        <img src="assets/images/gorilla.png" alt="animal">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">GORILLA</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">Visit</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <!--card4-->
+                    <div class="card_image">
+                        <img src="assets/images/animal2.png" alt="animal">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">TIGER</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">Visit</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <!--card5-->
+                    <div class="card_image">
+                        <img src="assets/images/hypopotame.png" alt="animal">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">HYPOPOTAMUS</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">Visit</button>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <!--card6-->
+                    <div class="card_image">
+                        <img src="assets/images/animal10.png" alt="animal">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">UMUSAMBI</h2>
+                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                        <button class="btn card_btn">Visit</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--end card images-->
+    <h1 class="text-center text-uppercase font-weight-bold heads">GALLERY</h1>
+    <!--gallery-->
+    <div class="mb-5" id="gallery">
+        <div class="slider">
+            <figure class="slider__item">
+                <img class="slider__image" src="assets/images/animal10.png" alt="animal" />
+                <figcaption class="slider__caption">Grey crowned crane, also known as the African crowned crane, golden crested crane, golden-crowned crane, East African crane, East African crowned crane, Eastern crowned crane, South African crane, is a bird in the crane family, Gruidae.
+                </figcaption>
+            </figure>
+            <figure class="slider__item">
+                <img class="slider__image" src="assets/images/animal9.png" alt="animal" />
+                <figcaption class="slider__caption">Giraffe is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be one species, Giraffa camelopardalis, with nine subspecies.
+                </figcaption>
+            </figure>
+            <figure class="slider__item">
+                <img class="slider__image" src="assets/images/animal11.png" alt="animal" />
+                <figcaption class="slider__caption">Orangutans are unique in the ape world. Of the four kinds of nonhuman great apes – gorillas, chimpanzees, bonobos and orangutans – only the orangutan comes from Asia; the rest come from Africa.
+                </figcaption>
+            </figure>
+            <figure class="slider__item">
+                <img class="slider__image" src="assets/images/animal12.png" alt="animal" />
+                <figcaption class="slider__caption">Crocodiles or true crocodiles are large semiaquatic reptiles that live throughout the tropics in Africa, Asia, the Americas and Australia. Crocodylinae, all of whose members are considered true crocodiles, is classified as a biological subfamily.
+                </figcaption>
+            </figure>
+            <figure class="slider__item">
+                <img class="slider__image" src="assets/images/animal13.png" alt="animal" />
+                <figcaption class="slider__caption">Gorillas are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Sub-Saharan Africa. The genus Gorilla is divided into two species: the eastern gorillas and the western gorillas, and either four or five subspecies. They are the largest living primates.
+                </figcaption>
+            </figure>
+            <figure class="slider__item">
+                <img class="slider__image" src="assets/images/elephant.png" alt="animal" />
+                <figcaption class="slider__caption">Elephants are mammals of the family Elephantidae and the largest existing land animals. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. Elephantidae is the only surviving family of the order Proboscidea; extinct members include the mastodons.
+                </figcaption>
+            </figure>
+            <figure class="slider__item">
+                <img class="slider__image" src="assets/images/rainbow.png" alt="animal" />
+                <figcaption class="slider__caption">Victoria Falls is a waterfall on the Zambezi River in southern Africa, which provides habitat for several unique species of plants and animals. It is located on the border between Zambia and Zimbabwe and is considered to be the world's largest waterfall due to its width of 1,708 metres.
+                </figcaption>
+            </figure>
+            <figure class="slider__item">
+                <img class="slider__image" src="assets/images/pyra.png" alt="animal" />
+                <figcaption class="slider__caption">Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids. Most were built as tombs for the country's pharaohs and their consorts during the Old and Middle Kingdom periods.
+                </figcaption>
+            </figure>
+        </div>
+        <div class="slider__btn"></div>
+    </div>
+    <div class="especer"></div>
+    <!-- about us-->
+    <!-- Background video -->
+    <h1 class=" mt-5 font-weight-bold heads">ABOUT US</h1>
+    <div class="video-background-holder  fixed" id="about">
+        <div class="video-background-overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="assets/video/mountain.mp4" type="video/mp4">
+        </video>
+        <div class="video-background-content container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100">
+                    <div class="jumbotron-fluid about-backg">
+                        <div class="container about-backg">
+                            <h4 class=" aboutus">
+                          Africa Tourists Guide brings you a carefully selected range of overland adventures, wildlife safaris and travel
+                          packages. With over 15 years’ experience in organising African tours and safaris, we bring you the very best of
+                          Africa. Whether it is a day tour,
+                          camping overland tour, an exclusive lodge or a Big 5 safari, Open Tourists Guide can help you plan a fantastic
+                          travel experience to suit your desires and budget. With a passion for travel and vast knowledge of Africa,
+                          Africa Tourists Guide will
+                          help you to organize an unforgettable African experience. 
+                        </h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
-
-
-      <div id="controls">
-        <select id="country">
-                      <option value="all">World Wide</option>
-                      <option value="ak" selected >Select a country of destination...</option>
-                      <option value="rw">Rwanda</option>
-                      <option value="sa">South-africa</option>
-                      <option value="ma">Maroc</option>
-                      <option value="ng">Nigeria</option>
-                      <option value="ag">Algerie</option>
-                      <option value="cg">D.R.Congo</option>
-                      <option value="ug">Uganda</option>
-                      <option value="ca">Cameroon</option>
-                      <option value="et">Ethiopia</option>
-                      <option value="sd">Sudan</option>
-                      <option value="ic">Ivory Cost</option>
-                      <option value="ml">Mali</option>
-                      <option value="md">Madagascar</option>
-                      <option value="al">Angola</option>
-                      <option value="lb">Libya</option>
-                      <option value="gn">Guinea</option>
-                      <option value="bn">Benin</option>
-                      <option value="zm">Zambia</option>
-                      <option value="mz">Mozambique</option>
-                      <option value="sm">Somalia</option>
-                      <option value="mr">Mauritius</option>
-                      <option value="mn">Mauritania</option>
-                      <option value="bt">Botswana</option>
-                      <option value="cv">Cape-verde</option>
-                      <option value="sl">Seyshelles</option>
-                      <option value="mw">Malawi</option>
-                      <option value="bf">Burkina Faso</option>
-                      <option value="ea">Erithrea</option>
-                      <option value="nr">Niger</option>
-                      <option value="tg">Togo</option>
-                      <option value="gb">Gabon</option>
-                      <option value="la">Liberia</option>
-                      <option value="sl">Sierra Leone</option>
-                      <option value="sz">Swaziland</option>
-                      <option value="ss">South Soudan</option>
-                      <option value="gm">Gambia</option>
-                      <option value="cd">Chad</option>
-                      <option value="dj">Djibouti</option>
-                      <option value="bd">Burundi</option>
-                      <option value="cr">Centre Africa Republic</option>
-                      <option value="ru">Reunion</option>
-                      <option value="le">Lesotho</option>
-                      <option value="cb">Congo Brazaville</option>
-                      <option value="mr">Marocco</option>
-                      <option value="ke">Kenya</option>
-                      <option value="tu">Tunisia</option>
-                      <option value="gn">Ghana</option>
-                      <option value="nm">Namibie</option>
-                      <option value="tz">Tanzania</option>
-                      <option value="cm">Comoros</option>
-                      <option value="eg">Egypt</option>
-                      <option value="zw">Zimbabwe</option>
-                      <option value="se">Senegal</option>
-                    </select>
-      </div>
-
-
-
-      <div class="col-xs-12">
-        <!--Search bar-->
-        <form class="search-form">
-          <div id="locationField">
-            <input id="autocomplete" class="search-bar " placeholder="Add a city of destination..." type="text" />
-            <button type="button" class=" first" onclick="smoothScroll(document.getElementById('grey'))">Search</button>
-
-          </div>
-        </form>
-      </div>
-
-    </div>
-  </div>
-         </header>
-         <div class="content">
-         <hr class="spacer " id="map-section">
-  <div id="grey">
-
-
-    <!-- Radio buttons for places -->
-
-    <div id="placestoggle">
-      <div id="places">
-        <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" />
-        <label for="lodging">Hotel</label>
-        <input onchange="search()" type="radio" id="museum" name="option" />
-        <label for="museum">Museum</label>
-        <input onchange="search()" type="radio" id="restaurant" name="option" />
-        <label for="restaurant">Restaurant</label>
-        <input onchange="search()" type="radio" id="bar" name="option" />
-        <label for="bar">Bar</label>
-        <input onchange="search()" type="radio" id="airport" name="option" />
-        <label for="airport">Airport</label>
-        <input onchange="search()" type="radio" id="bank" name="option" />
-        <label for="bank">Bank</label>
-        <input onchange="search()" type="radio" id="atractions" name="option" />
-        <label for="atractions">atractions-sites</label>
-        <input onchange="search()" type="radio" id="parks" name="option" />
-        <label for="parks">National Park</label>
-      </div>
-    </div>
-
-    <!-- the map -->
-    <div id="map"></div>
-
-    <!-- drop down options for pins on map-->
-    <div id="listing">
-      <table id="resultsTable">
-        <tbody id="results"></tbody>
-      </table>
-    </div>
-
-    <!-- information for each of the addresses given on the map-->
-    <div style="display: none">
-      <div id="info-content">
-        <table>
-          <tr id="iw-url-row" class="iw_table_row">
-            <td id="iw-icon" class="iw_table_icon"></td>
-            <td id="iw-url"></td>
-          </tr>
-          <tr id="iw-address-row" class="iw_table_row">
-            <td class="iw_attribute_name">Address:</td>
-            <td id="iw-address"></td>
-          </tr>
-          <tr id="iw-phone-row" class="iw_table_row">
-            <td class="iw_attribute_name">Telephone:</td>
-            <td id="iw-phone"></td>
-          </tr>
-          <tr id="iw-rating-row" class="iw_table_row">
-            <td class="iw_attribute_name">Rating:</td>
-            <td id="iw-rating"></td>
-          </tr>
-          <tr id="iw-website-row" class="iw_table_row">
-            <td class="iw_attribute_name">Website:</td>
-            <td id="iw-website"></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-
-            <hr class="spacer">
-</div>
-      </div>
-<!--vard images-->
-<div class="main" id="atraction">
-  <h1 class="font-weight-bold heads">Atractive sites</h1>
-  <ul class="cards">
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="assets/images/animal16.png"></div>
-        <div class="card_content">
-          <h2 class="card_title">ZEBRA</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">VISIT</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="assets/images/anc.jpg"></div>
-        <div class="card_content">
-          <h2 class="card_title">PYLAMIDE</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Visit</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="assets/images/gorilla.png"></div>
-        <div class="card_content">
-          <h2 class="card_title">GORILLA</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Visit</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="assets/images/animal2.png"></div>
-        <div class="card_content">
-          <h2 class="card_title">TIGER</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Visit</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="assets/images/hypopotame.png"></div>
-        <div class="card_content">
-          <h2 class="card_title">HYPOPOTAMUS</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Visit</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="assets/images/animal10.png"></div>
-        <div class="card_content">
-          <h2 class="card_title">UMUSAMBI</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Visit</button>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
-<!--end card images-->
-<h1 class="text-center text-uppercase font-weight-bold heads">GALLERY</h1>
-
-<!--gallery-->
-<section class="mb-5" id="gallery">
-<div class="slider">
-  <figure class="slider__item"><img class="slider__image" src="assets/images/animal10.png"/>
-    <figcaption class="slider__caption">Grey crowned crane, also known as the African crowned crane, golden crested crane, golden-crowned crane, East African crane, East African crowned crane, Eastern crowned crane, South African crane, is a bird in the crane family, Gruidae. 
-     </figcaption>
-  </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/animal9.png"/>
-    <figcaption class="slider__caption">Giraffe is an African artiodactyl mammal, the tallest living terrestrial animal and the largest ruminant. It is traditionally considered to be one species, Giraffa camelopardalis, with nine subspecies. 
-    </figcaption>
-  </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/animal11.png"/>
-    <figcaption class="slider__caption">Orangutans are unique in the ape world. Of the four kinds of nonhuman great apes – gorillas, chimpanzees, bonobos and orangutans – only the orangutan comes from Asia; the rest come from Africa.
-    </figcaption>
-  </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/animal12.png"/>
-    <figcaption class="slider__caption">Crocodiles or true crocodiles are large semiaquatic reptiles that live throughout the tropics in Africa, Asia, the Americas and Australia. Crocodylinae, all of whose members are considered true crocodiles, is classified as a biological subfamily. 
-      </figcaption>
-  </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/animal13.png"/>
-    <figcaption class="slider__caption">Gorillas are ground-dwelling, predominantly herbivorous apes that inhabit the forests of central Sub-Saharan Africa. The genus Gorilla is divided into two species: the eastern gorillas and the western gorillas, and either four or five subspecies. They are the largest living primates. 
-     </figcaption>
-  </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/elephant.png"/>
-    <figcaption class="slider__caption">Elephants are mammals of the family Elephantidae and the largest existing land animals. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. Elephantidae is the only surviving family of the order Proboscidea; extinct members include the mastodons. 
-        </figcaption>
-  </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/rainbow.png"/>
-    <figcaption class="slider__caption">Victoria Falls is a waterfall on the Zambezi River in southern Africa, which provides habitat for several unique species of plants and animals. It is located on the border between Zambia and Zimbabwe and is considered to be the world's largest waterfall due to its width of 1,708 metres. 
-        </figcaption>
-  </figure>
-  <figure class="slider__item"><img class="slider__image" src="assets/images/pyra.png"/>
-    <figcaption class="slider__caption">Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids. Most were built as tombs for the country's pharaohs and their consorts during the Old and Middle Kingdom periods.
-        </figcaption>
-  </figure>
-  
-  
-  
- 
-  
-</div>
-<div class="slider__btn"></div>
-</section>
-<div class="especer">
-</div>
-
-  <!-- about us-->
-<!-- Background video -->
-  <h1 class=" mt-5 font-weight-bold heads">ABOUT US</h1>
-<div class="video-background-holder  fixed" id="about">
-  <div class="video-background-overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="assets/video/mountain.mp4" type="video/mp4">
-    </video>
-  <div class="video-background-content container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100" id="about">
-      <div class="jumbotron-fluid about-backg">
-  <div class="container about-backg">
-    <h4 class=" aboutus">
-        Africa Tourists Guide brings you a carefully selected range of overland adventures, wildlife safaris and travel
-        packages. With over 15 years’ experience in organising African tours and safaris, we bring you the very best of
-        Africa. Whether it is a day tour,
-        camping overland tour, an exclusive lodge or a Big 5 safari, Open Tourists Guide can help you plan a fantastic
-        travel experience to suit your desires and budget. With a passion for travel and vast knowledge of Africa,
-        Africa Tourists Guide will
-        help you to organize an unforgettable African experience. </h4>
-  </div>
-</div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End -->
-
- <h1 class=" font-weight-bold heads">CONTACT US</h1>
- 
-<!--footer-->
-<footer class="new_footer_area footer_color mt-5" id="contact-us">
-            <div class="new_footer_top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">CONTACT US</h3>
-                                <p>Feel free to contac us for more information!</p>
-                                <form action="POST" onsubmit="return sendMail(this);" method="post" novalidate="true" _lpchecked="1" id="id01">
-                                    <input type="email" name="emailaddress" class="form-control mb-2" id="emailaddress" placeholder="Email" required placeholder="Email">
-                                    <textarea type="text" name="projectsummary" class="form-control mb-2" id="informationsummary" class="form-control " placeholder="Message"></textarea>
-                                    <button type="submit" class="sendbtn center-block">Send Email</button>
-                                    
-                                </form>
-                            </div>
+    <!-- End -->
+    <h1 class=" font-weight-bold heads">CONTACT US</h1>
+    <!--footer-->
+    <footer class="new_footer_area footer_color mt-5" id="contact-us">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">CONTACT US</h3>
+                            <p>Feel free to contac us for more information!</p>
+                            <form action="POST" onsubmit="return sendMail(this);" method="post" id="id01">
+                                <input type="email" name="emailaddress" class="form-control mb-2" id="emailaddress" placeholder="Email" required>
+                                <textarea name="projectsummary" class="form-control mb-2" id="informationsummary" placeholder="Message"></textarea>
+                                <button type="submit" class="sendbtn center-block">Send Email</button>
+                            </form>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Address</h3>
-                                <ul class="list-unstyled f_list">
-                                    <li><i class="fa fa-map-marker fa-x text-orange"><span class="contact-text place">Seattle | WA</span></i></li>
-                                    <li><i class="fa fa-phone fa-x text-orange"><span class="contact-text phone"><a href="tel:46-704052680" title="Give me a call">+46704052680</a></span></i></li>
-                                    <li><i class="fa fa-envelope fa-x text-orange"><span class="contact-text gmail"><a href="mailto:frankmasabo55@gmail.com" title="Send me an email">frankmasabo55@gmail.com</a></span></i></li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Address</h3>
+                            <ul class="list-unstyled f_list">
+                                <li>
+                                    <i class="fa fa-map-marker fa-x text-orange">
+																																	<span class="contact-text place">Seattle | WA</span>
+																																</i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone fa-x text-orange">
+																																	<span class="contact-text phone">
+																																		<a href="tel:46-704052680" title="Give me a call">+46704052680</a>
+																																	</span>
+																																</i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope fa-x text-orange">
+																																	<span class="contact-text gmail">
+																																		<a href="mailto:frankmasabo55@gmail.com" title="Send me an email">frankmasabo55@gmail.com</a>
+																																	</span>
+																																</i>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-lg-3 col-md-6 mt-3">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
-                                <ul class="list-unstyled f_list">
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Term &amp; conditions</a></li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-3">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                            <ul class="list-unstyled f_list">
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Term &amp; conditions</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-lg-3 col-md-6 mt-3">
-                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Social Media</h3>
-                                <div class="f_social_icon">
-                                    <a href="#" class="fab fa-facebook text-green"></a>
-                                    <a href="#" class="fab fa-twitter"></a>
-                                    <a href="#" class="fab fa-linkedin"></a>
-                                    <a href="#" class="fab fa-pinterest"></a>
-                                </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-3">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Social Media</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook text-green"></a>
+                                <a href="#" class="fab fa-twitter"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                                <a href="#" class="fab fa-pinterest"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer_bg">
-                    <div class="footer_bg_one"></div>
-                    <div class="footer_bg_two"></div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!--auto copyright javascript-->
+                    <div class="col-lg-6 col-sm-7 text-center copyright">
+                        Copyright &copy;
+                        <script>
+                            document.write("2020 - " + new Date().getFullYear());
+                        </script>
+                        <a href="https://frank-masabo.herokuapp.com/">
+                            <span class="owner">MASAcode All right reserved</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="footer_bottom">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-sm-7 text-center copyright">
-                            Copyright &copy; <script type="text/javascript">
-document.write("2020 - "+ new Date().getFullYear());
-</script> <a href="https://frank-masabo.herokuapp.com/"><span class="owner">MASAcode All right reserved</span></a>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<!--end footer-->
-
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script src="https://kit.fontawesome.com/dfc9dd395f.js"></script>
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-<!-- jQuery and Javascript for site functionalities -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- Google Maps script for markers on the map -->
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-
-<!--autocomplete feature of the Google Places API. -->
-<!-- Sends emails on submit button using the contact form -->
-
-<script src="assets/js/sendEmail.js" async></script>
-<script src="assets/js/clear.js"></script>
-<script src="assets/js/tests/sendMailTest.js"></script>
-<script src="assets/spec/sendMailSpec.js"></script>
-<script src="assets/js/no-submit.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"
-type="text/javascript"></script>
-<script type="text/javascript" src="assets/js/maps.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"
-type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&libraries=places&callback=initMap"
-async defer></script>
-<script src="https://maps.googleapis.com/maps/api/place/autocomplete/json?input=1600+Amphitheatre&key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&sessiontoken=1234567890"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
-<!--Start of Tawk.to for direct messaging Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5e878f1a69e9320caac00b25/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+        </div>
+    </footer>
+    <!--end footer-->
+    <!--scripts-->
+    <!--google translate-->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--font awasame-->
+    <script src="https://kit.fontawesome.com/dfc9dd395f.js"></script>
+    <!--send email-->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <!-- jQuery and Javascript for site functionalities -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Google Maps script for markers on the map -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <!--autocomplete feature of the Google Places API. -->
+    <!-- Sends emails on submit button using the contact form -->
+    <script src="assets/js/sendEmail.js" async></script>
+    <!--clear after send email-->
+    <script src="assets/js/clear.js"></script>
+    <script src="assets/js/tests/sendMailTest.js"></script>
+    <script src="assets/spec/sendMailSpec.js"></script>
+    <script src="assets/js/no-submit.js"></script>
+    <!--google map keys-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&callback=initMap"></script>
+    <!--google map autocomplate-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&libraries=places&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/place/autocomplete/json?input=1600+Amphitheatre&key=AIzaSyAFYoJqQ6uyw13NoiFaFX7hDIj2b4WGhqs&sessiontoken=1234567890"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+    <!--Start of Tawk.to for direct messaging Script-->
+    <script>
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5e878f1a69e9320caac00b25/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
+
 </html>
