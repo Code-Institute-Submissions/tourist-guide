@@ -106,6 +106,13 @@ nav ul li a {
     z-index: 100;
 }
 
+.visit {
+    text-decoration: none;
+    color: #f07030;
+    font-size: 26px;
+    font-family: 'Josefin Slab', serif;
+}
+
 .menu-icon {
     line-height: 60px;
     width: 100%;
